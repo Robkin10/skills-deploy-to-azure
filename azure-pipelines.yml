@@ -18,5 +18,7 @@ steps:
 - script: |
     npm install
     npm run build
-    npm test
+    npm install -g standard
+    npm install --save-dev standard
+    npm standard --fix
   displayName: 'npm install and build'
